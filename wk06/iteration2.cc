@@ -8,9 +8,9 @@
  * DO NOT ADD ANY INCLUDES!!
  */
 
-#include<iostream>
-#include<iterator> // for iterators
-#include<list> // for lists
+#include <iostream>
+#include <iterator> // for iterators
+#include <list> // for lists
 using namespace std;
 
 
