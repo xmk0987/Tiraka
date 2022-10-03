@@ -6,3 +6,7 @@ core
 *.core
 test
 test_*
+.qmake.stash
+.vscode
+*/stl/stl
+
