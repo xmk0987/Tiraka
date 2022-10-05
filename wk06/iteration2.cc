@@ -21,4 +21,13 @@ void printEverySecond(const list<int>& lst)
   */
 
   // ADD YOUR CODE HERE
+    int count = 0;
+    list<int>::const_iterator it;;
+    for(it = lst.begin(); it != lst.end(); ++ it){
+        if(count % 2 == 0){
+            cout<< *it << " ";
+        }
+        count += 1;
+
+    }
 }
