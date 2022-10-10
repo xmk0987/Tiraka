@@ -16,7 +16,7 @@ int sortDesc(std::vector<int>& v)
 {
     try{
 
-        sort(v.begin(), v.end(),greater());
+        sort(v.begin(), v.end(),greater<int>());
 
 
     }
