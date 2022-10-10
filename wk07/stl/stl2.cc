@@ -1,6 +1,7 @@
 #include <iterator>
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -13,6 +14,19 @@ using namespace std;
  */
 int sortDesc(std::vector<int>& v)
 {
-  return EXIT_FAILURE;
+    try{
+        reverse(v.begin(), v.end());
+        sort(v.begin(), v.end());
+
+    }
+    catch(int e){
+        return EXIT_FAILURE;
+    }
+
+
+  return EXIT_SUCCESS;
+
 }
+
+
 
