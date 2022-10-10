@@ -15,8 +15,9 @@ using namespace std;
 int sortDesc(std::vector<int>& v)
 {
     try{
-        reverse(v.begin(), v.end());
-        sort(v.begin(), v.end());
+
+        sort(v.begin(), v.end(),greater());
+
 
     }
     catch(int e){
