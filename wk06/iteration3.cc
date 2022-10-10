@@ -21,4 +21,15 @@ void printHalf(const list<int>& lst)
   */
 
   // ADD YOUR CODE HERE
+    int halfsize = lst.size()/2;
+    int  count = 0;
+    list<int>::const_iterator it;;
+    for(it = lst.begin(); it != lst.end(); ++ it){
+        if(count < halfsize){
+            cout<< *it << " ";
+        }
+        count += 1;
+
+    }
+
 }
