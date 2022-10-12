@@ -25,7 +25,7 @@ int findAtLeastGiven(std::map<std::string, int>& m, int given)
     }
 
     catch(exception e){
-        return NOT_FOUND;
+        return -1;
     }
 
 
