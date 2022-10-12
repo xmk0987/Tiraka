@@ -19,14 +19,11 @@ int findAtLeastGiven(std::map<std::string, int>& m, int given)
 
 {
 
-    try{
-        auto result = std::find_if(m.begin(), m.end(),[given](const auto& mo){ return mo.second >= given;});
-        return result->second;
+    auto result = std::find_if(m.begin(), m.end(),[given](const auto& mo){ return mo.second >= given;});
+    if(result == m.end()){
+        return NOT_FOUND;
     }
-
-    catch(exception e){
-        return -1;
-    }
+    return result->second;
 
 
 }
