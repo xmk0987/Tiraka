@@ -107,7 +107,6 @@ void testDoubleEvenRemoveUneven(int test_id) {
         std::vector<int> s2 = {2, 2, 2, 2, 4, 4, 4, 4};
 
 
-        doubleEvenRemoveUneven(v2);
         if(v2 == s2) {
             cout << "The tested vector from your function is equal with the solution vector." << endl;
         }
