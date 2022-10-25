@@ -9,11 +9,11 @@ const int NOT_FOUND = -1;
 
 
 /**
- * @brief doubles even numbers in the vector, removes uneven numbers.
+ * @brief duplicates even numbers in the vector, removes uneven numbers.
  *
  * @param vec vector to be handled
  */
-void doubleEvenRemoveUneven(std::vector<int>& vec);
+void duplicateEvenRemoveUneven(std::vector<int>& vec);
 
 
 /**
