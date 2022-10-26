@@ -10,22 +10,23 @@ using namespace std;
  *
  * @param vec vector to be handled
  */
+
 void duplicateEvenRemoveUneven(std::vector<int>& vec) {
 
-    using Iter = std::vector<int>::iterator;
+    int size = vec.size();
+    std::vector<int> dublicateVector;
 
-    Iter begin = vec.begin();
-    Iter end = vec.end();
-    for ( Iter it = begin; it < end; it++){
-        if ( *it % 2 == 0 ){
-            vec.insert(it, *it);
-            it++;
-
-        }
-        else {
-            vec.erase(it);
-            it--;
+    for(int i = 0; i < size; i++){
+        if(vec.at(i) % 2 == 0){
+            dublicateVector.push_back(vec.at(i));
+            dublicateVector.push_back(vec.at(i));
         }
     }
-}
 
+    vec.clear();
+    for(int i = 0; i < dublicateVector.size(); i++){
+        vec.push_back(dublicateVector.at(i));
+    }
+
+
+}
