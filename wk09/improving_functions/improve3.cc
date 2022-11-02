@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 #include <algorithm>
-
+#include <numeric>
 
 /**
  * @brief Sums up the values of the vector cumulatively, storing cumulative sum
@@ -20,7 +20,10 @@ std::map<int, int> cumulativeSums(std::vector<int> v) {
         if (sums.empty())
         { sums[v[i]] = v[i]; }
         else
-        { sums[v[i]] = sums.at(v[i-1]) + v[i]; }
+        {
+            int b[v.size()-1];
+            std::partial_sum(v[i-i], v[i],b);
+            sums[v[i]] = b[i]; }
     }
     return sums;
 }
