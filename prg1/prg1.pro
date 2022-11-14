@@ -58,3 +58,14 @@ FORMS += \
 #FORMS -= mainprogram.ui
 #CONFIG -= core gui qt
 #CONFIG += console
+
+DISTFILES += \
+    example-all-in.txt \
+    example-all-out.txt \
+    example-compulsory-in.txt \
+    example-compulsory-out.txt \
+    example-regions.txt \
+    example-stations.txt \
+    finland-departures.txt \
+    finland-regions.txt \
+    finland-stations.txt
