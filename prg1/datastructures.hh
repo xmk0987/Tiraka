@@ -158,13 +158,13 @@ public:
 
     // We recommend you implement the operations below only after implementing the ones above
 
-    // Estimate of performance: O(nlog(n)
+    // Estimate of performance: O(nlogn)
     // Short rationale for estimate: Transform algorithm is constant in time.
     // But std::sort has average case lineartihmic (nlogn) time complexity so that is why
     // it is the estimate of time complexity
     std::vector<StationID> stations_alphabetically();
 
-    // Estimate of performance: O(nlog(n)
+    // Estimate of performance: O(nlogn)
     // Short rationale for estimate: Transform algorithm is constant in time.
     // But std::sort has average case lineartihmic (nlogn) time complexity so that is why
     // it is the estimate of time complexity
