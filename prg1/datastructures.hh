@@ -125,12 +125,12 @@ public:
     Datastructures();
     ~Datastructures();
 
-    // Estimate of performance: Theta(1)
+    // Estimate of performance: O(1)
     // Short rationale for estimate:
     // The size is tracked in use, getting the size is always constant.
     unsigned int station_count();
 
-    // Estimate of performance: Theta(n)
+    // Estimate of performance: O(n)
     // Short rationale for estimate:
     // Documentation tells that clear algorithm is linear on size, goes through whole map
     // so its dependant on size
@@ -158,13 +158,13 @@ public:
 
     // We recommend you implement the operations below only after implementing the ones above
 
-    // Estimate of performance: Theta(nlog(n)
+    // Estimate of performance: O(nlog(n)
     // Short rationale for estimate: Transform algorithm is constant in time.
     // But std::sort has average case lineartihmic (nlogn) time complexity so that is why
     // it is the estimate of time complexity
     std::vector<StationID> stations_alphabetically();
 
-    // Estimate of performance: Theta(nlog(n)
+    // Estimate of performance: O(nlog(n)
     // Short rationale for estimate: Transform algorithm is constant in time.
     // But std::sort has average case lineartihmic (nlogn) time complexity so that is why
     // it is the estimate of time complexity
