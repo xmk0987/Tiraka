@@ -175,12 +175,12 @@ public:
     // with looked coordinates dependant on size for that reason
     StationID find_station_with_coord(Coord xy);
 
-    // Estimate of performance: O(1) or O(n)
+    // Estimate of performance: O(n)
     // Short rationale for estimate: According to documentation unordered map find and
     // insertion are time complexity of O(1) or O(n) them add together will also make one of them
     bool change_station_coord(StationID id, Coord newcoord);
 
-    // Estimate of performance: O(1) or O(n)
+    // Estimate of performance: O(n)
     // Short rationale for estimate: Find is O(1) or O(n) and vector and unordered map insertion also
     // is O(1) or O(n) which adds up to estimated
     bool add_departure(StationID stationid, TrainID trainid, Time time);
@@ -229,7 +229,7 @@ public:
     // of O(n) according to documentation and linear + linear = linear
     bool add_station_to_region(StationID id, RegionID parentid);
 
-    // Estimate of performance: O(n)
+    // Estimate of performance: O(nlogn)
     // Short rationale for estimate: Forloops through regions to find certain station
     // which at worst case will be O(n) and than with recursion which is also O(n) will
     // go through the subregion vectors
